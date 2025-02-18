@@ -1,0 +1,611 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+body {
+  font-family: "IBM Plex Sans", sans-serif;
+}
+
+.main_header {
+  display: flex;
+  justify-content: end;
+}
+.header {
+  background-color: #008000;
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 75px;
+  gap: 10px;
+  position: relative;
+  padding-right: 80px;
+}
+.header::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 60px;
+  height: 60px;
+  background: white;
+  clip-path: polygon(0 0, 0 0, 100% 100%, 0 100%);
+}
+.header img {
+  width: 35px;
+  height: 35px;
+}
+
+@media screen and (max-width: 768px) {
+  .header {
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .header::before {
+    background: none;
+  }
+  .header img {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+/* ============================================================logo header */
+
+.header_p {
+  width: 100%;
+  margin-top: 20px;
+}
+.header_2 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 50px;
+}
+.call_whtp img {
+  width: 32px;
+  height: 32px;
+}
+.call_whtp a {
+  text-decoration: none;
+  color: black;
+  font-weight: 100;
+}
+.call {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding-top: 10px;
+}
+.call_col {
+  display: flex;
+}
+.whtp {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 20px;
+  /* padding-top: 10px; */
+}
+
+.call_col i {
+  border: 2px solid #333333;
+  border-radius: 50%;
+  padding: 7px;
+  margin-top: 10px;
+}
+.call_column {
+  display: block;
+  margin-top: 10px;
+}
+.callx {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  padding-top: 10px;
+}
+.call_column p {
+  margin-top: 5px;
+}
+
+@media screen and (max-width: 768px) {
+  .hide {
+    display: none;
+  }
+  .header_1 {
+    width: 100%;
+    margin-right: 0 !important;
+  }
+  .header_2 {
+    display: block;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 50px;
+  }
+}
+
+/* ==============================================hero========================== */
+
+.hero {
+  width: 100%;
+  margin: auto;
+  background: linear-gradient(to right, green, lightgreen);
+  color: white;
+  padding: 65px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.hero_content h1 {
+  font-weight: 600;
+}
+.hero_btn {
+  margin-top: 30px;
+}
+.hero_btn a {
+  text-decoration: none;
+  padding: 15px;
+  font-size: 14px;
+  background-color: #ff5722;
+  color: white;
+  font-weight: bold;
+  border: 1px solid #fff;
+  text-align: center;
+  transition: background-color 0.3s;
+}
+#Broucher_btn {
+  background-color: transparent;
+  border: 1px solid #fff;
+}
+.hero_banner img {
+  max-width: 400px;
+  height: auto;
+  margin-right: 40px;
+}
+#Broucher_btn:hover {
+  background-color: #ff5722;
+}
+
+/* ============================================section-3====================== */
+
+.section-3 {
+  width: 100%;
+  margin: auto;
+  text-align: center;
+  margin-top: 40px;
+}
+.section-3 h2 {
+  font-size: 32px;
+  font-weight: 600;
+  color: black;
+}
+.courses {
+  width: 1200px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 15px;
+}
+.course_card h3 {
+  font-size: 20px;
+  color: black;
+}
+.course_card h4 {
+  color: black;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.card_btn a {
+  text-decoration: none;
+  padding: 10px;
+  font-size: 14px;
+  background-color: #ff5722;
+  color: white;
+
+  border: 1px solid #fff;
+  text-align: center;
+  transition: background-color 0.3s;
+  border-radius: 0;
+}
+#card_btn1 {
+  background-color: green;
+  background-image: linear-gradient(45deg, #00000096, transparent);
+  text-decoration: none;
+}
+.course_card {
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: 0.5s ease-in;
+  padding: 20px;
+}
+.course_card:hover {
+  background-color: green;
+  color: white;
+}
+.courses:nth-child(4) {
+  height: 100px;
+}
+
+/* ============================================section-4====================== */
+
+.section-4 {
+  background: linear-gradient(to right, green, lightgreen);
+  margin-top: 30px;
+  padding: 20px;
+}
+.section-4 h2 {
+  font-size: 32px;
+  font-weight: 600;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  padding-top: 30px;
+}
+
+.why_us {
+  width: 1200px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 15px;
+  margin-top: 30px;
+}
+
+.why_card {
+  background-color: white;
+  text-align: center;
+  padding: 10px;
+  border-radius: 8px;
+  transition: 0.5s ease-in-out;
+}
+.why_card h4 {
+  font-size: 14px;
+  font-weight: bold;
+}
+.why_card img {
+  width: 50px;
+  margin-bottom: 5px;
+}
+.why_card:hover {
+  background-color: green;
+  transform: translatey(-5px);
+}
+
+/* ===========================================================================form */
+
+.form {
+  width: 100%;
+  margin-top: 30px;
+  text-align: center;
+}
+.form_card {
+  width: 1050px;
+  margin: auto;
+  background-color: #ffc001;
+}
+.form_card h4 {
+  font-size: 18px;
+  padding-bottom: 15px;
+  padding-top: 15px;
+  font-weight: bold;
+}
+
+.form_form {
+  background-color: black;
+  display: flex;
+  gap: 50px;
+  align-items: center;
+  justify-content: center;
+}
+.form_card h3 {
+  font-size: 14px;
+  font-weight: bold;
+  margin-top: 10px;
+  padding-bottom: 10px;
+}
+.form_card h3 a {
+  text-decoration: none;
+  color: black;
+}
+.input_field {
+  padding-top: 15px;
+}
+.input_field input {
+  display: block;
+  width: 200px;
+  height: 40px;
+  padding-left: 2px;
+  border: none;
+  outline: none;
+  margin-bottom: 15px;
+  border-radius: 4px;
+}
+.form_form button {
+  background-color: green;
+  background-image: linear-gradient(45deg, #00000096, transparent);
+
+  font-size: 14px;
+  border-radius: 4px;
+  color: white;
+  width: 204px;
+  height: 40px;
+  border: none;
+}
+
+/* ===========================================================section-5 */
+
+.section-5 {
+  background: linear-gradient(to right, green, lightgreen);
+  margin-top: 30px;
+  padding: 25px;
+  margin-bottom: 30px;
+}
+
+.media {
+  width: 1400px;
+  margin: auto;
+  font-size: large;
+  font-weight: 600;
+  text-align: center;
+}
+.media h2 {
+  color: white;
+  font-weight: 600;
+}
+.media p {
+  font-weight: 200;
+}
+.carousel_card {
+  width: 150px;
+}
+.carousel_card img {
+  height: 100px;
+  object-fit: contain;
+  padding: 10px;
+  border: 1px solid white;
+}
+.carousel {
+  width: 80%;
+  margin: auto;
+}
+
+/* ========================================================section-6 */
+
+.section-6 {
+  width: 1280px;
+  margin-top: 30px;
+  text-align: center;
+  margin: auto;
+}
+.section-6 h2 {
+  font-weight: 600;
+  color: black;
+  margin-bottom: 20px;
+}
+.testimonial_img img {
+  width: 80px;
+  height: 80px;
+
+  margin: 0 auto 10px;
+  border: 4px solid lightseagreen;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.testimonial_card {
+  background: linear-gradient(317deg, green, #dd3333);
+  color: #fff;
+  padding: 50px;
+  width: 800px;
+  border-radius: 12px;
+  margin: auto;
+  margin-left: 10px;
+}
+
+.testimonial_name {
+  font-weight: 600;
+  font-size: 20px;
+}
+/* ====================================================footer */
+
+footer {
+  background-color: #f8f8f8;
+  padding: 30px 50px;
+}
+
+.footer-container {
+  width: 1400px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer-left {
+  flex: 1;
+}
+
+.footer-logo {
+  width: 400px;
+}
+
+.footer-right {
+  flex: 2;
+}
+
+.footer-right h3 {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.footer-right p {
+  font-size: 16px;
+  margin: 5px 0;
+}
+
+.footer-right a {
+  text-decoration: none;
+  color: #000;
+  font-weight: bold;
+}
+
+.social-icons {
+  margin: 10px 0;
+}
+
+.social-icons a {
+  display: inline-block;
+  margin-right: 10px;
+  padding: 10px;
+}
+
+.social-icons img {
+  width: 30px;
+  height: 30px;
+}
+
+/* =================================================section_7 */
+.section_7 {
+  background: linear-gradient(to right, green, lightgreen);
+  margin-top: 30px;
+  padding: 25px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+.section_7 h2 {
+  font-weight: 600;
+  color: white;
+  padding: 20px;
+}
+
+.container_grid {
+  width: 1400px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 10px;
+  margin: auto;
+}
+.grid_content {
+  height: 150px;
+  background-color: white;
+}
+.grid_content img {
+  height: 128px;
+  width: 128px;
+  padding: 10px;
+}
+.img_wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.img_wrapper img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* ===========================================================section-8 */
+
+.section_8 {
+  background: linear-gradient(to right, green, lightgreen);
+  margin-top: 30px;
+  padding: 25px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+.section_8 h2 {
+  font-weight: 600;
+  color: white;
+  padding: 20px;
+}
+.grid_item {
+  height: 150px;
+  background-color: white;
+}
+.grid_item img {
+  height: 128px;
+  width: 128px;
+
+  object-fit: contain;
+  border-radius: 15px 15px 15px 15px;
+}
+
+/* =============================================section-9 */
+
+.section-9 {
+  background: white;
+  margin-top: 30px;
+  padding: 20px;
+}
+.section-9 h2 {
+  font-size: 32px;
+  font-weight: 600;
+  color: black;
+  text-align: center;
+  padding-top: 30px;
+}
+.section-9 h2 a {
+  color: green;
+}
+
+.section-9 .why_us {
+  width: 1200px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 15px;
+  margin-top: 30px;
+}
+
+.section-9 .why_us .why_card {
+  background-color: white;
+  text-align: center;
+  padding: 10px;
+  border-radius: 8px;
+  /* transition: 0.5s ease-in-out; */
+  border: 1px solid #ccc;
+}
+.why_card h4 {
+  font-size: 14px;
+  font-weight: bold;
+}
+.why_card img {
+  width: 50px;
+  margin-bottom: 5px;
+}
+.section-9 .why_us .why_card:hover {
+  background-color: white;
+}
+.why_card i {
+  font-size: 50px;
+  padding: 15px;
+}
+
+/* ======================================================.section_10 */
+
+.section_10 {
+  margin-top: 30px;
+  padding: 25px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+.container_grid_vedio {
+  width: 900px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 5px;
+}
+.grid_video {
+  object-fit: contain;
+}

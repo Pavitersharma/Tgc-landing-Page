@@ -74,6 +74,7 @@ body {
 .call {
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 10px;
   padding-top: 10px;
 }
@@ -86,7 +87,7 @@ body {
   justify-content: center;
 
   gap: 20px;
-  /* padding-top: 10px; */
+  padding-top: 10px;
 }
 
 .call_col i {
@@ -126,16 +127,24 @@ body {
 }
 
 /* ==============================================hero========================== */
-
-.hero {
-  width: 100%;
-  margin: auto;
+.section_2{
+  /* width: 100%; */
+  /* margin: auto; */
   background: linear-gradient(to right, green, lightgreen);
   color: white;
   padding: 65px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+.hero {
+ width: 1400px;
+ margin: auto;
+ display: flex;
+  justify-content: space-between;
+  align-items: center;
+
 }
 .hero_content h1 {
   font-weight: 600;
@@ -167,6 +176,32 @@ body {
   background-color: #ff5722;
 }
 
+@media screen and (max-width: 768px) {
+  .section_2 {
+    padding: 40px;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero_content h1 {
+    font-size: 18px;
+  }
+
+  .hero_content p {
+    font-size: 12px;
+  }
+
+  .hero_btn a {
+    padding: 12px;
+    font-size: 12px;
+  }
+
+  .hero_banner img {
+    max-width: 200px;
+  }
+}
+
+
 /* ============================================section-3====================== */
 
 .section-3 {
@@ -185,8 +220,12 @@ body {
   margin: auto;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr ;
   gap: 15px;
+}
+.card_content img{
+  width: 100%;
+  margin-bottom: 10px;
 }
 .course_card h3 {
   font-size: 20px;
@@ -222,12 +261,36 @@ body {
   transition: 0.5s ease-in;
   padding: 20px;
 }
-.course_card:hover {
+/* .course_card:hover {
   background-color: green;
   color: white;
-}
+} */
 .courses:nth-child(4) {
   height: 100px;
+}
+
+@media screen and (max-width: 768px) {
+  .section-3 h2 {
+    font-size: 28px;
+  }
+
+  .courses {
+    width: 90%;
+    grid-template-columns: 1fr; /* Switch to single column */
+  }
+
+  .course_card h3 {
+    font-size: 18px;
+  }
+
+  .course_card h4 {
+    font-size: 14px;
+  }
+
+  .card_btn a {
+    padding: 8px;
+    font-size: 12px;
+  }
 }
 
 /* ============================================section-4====================== */
@@ -274,6 +337,28 @@ body {
   background-color: green;
   transform: translatey(-5px);
 }
+@media (max-width: 768px) {
+  .why_us {
+    width: 90%;
+    grid-template-columns: 1fr 1fr; /* Two columns instead of three */
+    grid-template-rows: auto;
+  }
+}
+
+@media (max-width: 480px) {
+  .why_us {
+    grid-template-columns: 1fr; /* Single column layout */
+  }
+  
+  .why_card {
+    padding: 15px;
+  }
+  
+  .section-4 h2 {
+    font-size: 28px;
+  }
+}
+
 
 /* ===========================================================================form */
 
@@ -335,6 +420,43 @@ body {
   height: 40px;
   border: none;
 }
+@media (max-width: 1080px) {
+  .form_card {
+    width: 90%;
+  }
+
+  .form_form {
+    flex-direction: column; /* Stack elements vertically */
+    gap: 20px;
+    padding: 20px;
+  }
+
+  .input_field input {
+    width: 90%; /* Adjust input width for smaller screens */
+  }
+
+  .form_form button {
+    width: 90%;
+  }
+}
+
+@media (max-width: 600px) {
+  .form_card h4 {
+    font-size: 16px;
+  }
+
+  .form_card h3 {
+    font-size: 12px;
+  }
+
+  .input_field input {
+    width: 100%;
+  }
+
+  .form_form button {
+    width: 100%;
+  }
+}
 
 /* ===========================================================section-5 */
 
@@ -355,12 +477,14 @@ body {
 .media h2 {
   color: white;
   font-weight: 600;
+  font-size: 32px;
 }
 .media p {
   font-weight: 200;
 }
 .carousel_card {
   width: 150px;
+  background-color: #000;
 }
 .carousel_card img {
   height: 100px;
@@ -385,6 +509,7 @@ body {
   font-weight: 600;
   color: black;
   margin-bottom: 20px;
+  font-size: 32px;
 }
 .testimonial_img img {
   width: 80px;
@@ -480,6 +605,7 @@ footer {
   font-weight: 600;
   color: white;
   padding: 20px;
+  font-size: 32px;
 }
 
 .container_grid {
@@ -513,6 +639,25 @@ footer {
   display: block;
 }
 
+@media screen and (max-width: 768px) {
+  .container_grid {
+    grid-template-columns: 1fr 1fr; 
+  }
+
+  .grid_content {
+    height: 130px;
+  }
+
+  .grid_content img {
+    height: 90px;
+    width: 90px;
+  }
+
+  .section_7 h2 {
+    font-size: 28px;
+  }
+}
+
 /* ===========================================================section-8 */
 
 .section_8 {
@@ -526,6 +671,7 @@ footer {
   font-weight: 600;
   color: white;
   padding: 20px;
+  font-size: 32px;
 }
 .grid_item {
   height: 150px;
@@ -591,6 +737,21 @@ footer {
   padding: 15px;
 }
 
+@media screen and (max-width: 768px) {
+  .section-9 .why_us {
+    
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 15px;
+    margin-top: 30px;
+  }
+  .section-9 .why_us .why_card{
+    width: 399px;
+  }
+}
+
 /* ======================================================.section_10 */
 
 .section_10 {
@@ -599,13 +760,143 @@ footer {
   margin-bottom: 30px;
   text-align: center;
 }
+.section_10 h2{
+  font-weight: 600;
+  font-size: 32px;
+}
 .container_grid_vedio {
-  width: 900px;
+  width: 1200px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
-  gap: 5px;
+  gap: 15px;
+  margin: auto;
 }
 .grid_video {
   object-fit: contain;
+}
+/* ======================================================.section_11 */
+
+
+.section_11{
+  margin:auto;
+  margin-bottom: 20px;
+ 
+}
+.section_11 h2{
+  text-align: center;
+  font-weight: 600;
+  font-size: 32px;
+}
+.section_11 p{
+  text-align: center;
+}
+
+.form-container {
+  background: white;
+  padding: 25px;
+  border-radius: 8px;
+  /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
+}
+input {
+  width: 100%;
+  padding: 8px;
+  margin: 8px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  height: 45px;
+}
+button {
+  width: 100px;
+  padding: 10px;
+  background: rgb(2, 147, 14);
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+button:hover {
+  background: rgb(4, 36, 1);
+}
+.contact_form{
+  display: flex;
+  gap: 20px;
+  margin: auto;
+  width: 1400px;
+  
+}
+
+/* =====================================================Section_12 */
+.Section_12{
+  background: linear-gradient(to right, green, lightgreen);
+  padding: 30px;
+}
+.Section_12 h2{
+  font-weight: 600;
+  color: white;
+  text-align: center;
+  font-size: 32px;
+  padding: 10px;
+}
+.behance_container{
+  width: 1400px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 15px;
+
+  
+}
+.behance_card{
+
+  border-radius: 10px;
+
+  
+}
+.behance_card iframe{
+  min-height: 316px;
+  height: 100%;
+}
+
+/* ==============================================================section_13 */
+
+.section_13 {
+  background: linear-gradient(to right, #0a7e00, #7be267);
+  padding: 20px;
+  text-align: center;
+}
+.section_13 h2 {
+  color: white;
+  margin-bottom: 20px;
+}
+.faq {
+  background: white;
+  padding: 10px;
+  margin: 10px auto;
+  width: 80%;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+.faq_header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  padding: 10px;
+  /* background: #f1f1f1; */
+  border-radius: 5px;
+}
+.faq_answer {
+  display: none;
+  padding: 10px;
+  /* background: #f9f9f9; */
+  border-radius: 5px;
+  margin-top: 5px;
+}
+.toggle {
+  font-size: 20px;
+  font-weight: bold;
 }

@@ -35,6 +35,28 @@ body {
   height: 35px;
 }
 
+@media screen and (max-width: 768px) {
+ 
+  .main_header{
+    width: 100%;
+  }
+  .header {
+    width: 100%; 
+    
+
+    padding:none;
+    gap: 5px; 
+  }
+
+  .header::before {
+   display: none;
+  }
+
+  .header img {
+    width: 25px; 
+    height: 25px;
+  }
+}
 
 
 /* ============================================================logo header */
@@ -117,18 +139,18 @@ body {
   }
 
   .call {
-    flex-direction: column;
+   
     gap: 5px;
     padding-top: 5px;
   }
 
   .call_col {
-    flex-direction: column;
+ 
     align-items: center;
   }
 
   .whtp {
-    flex-direction: column;
+   
     gap: 10px;
     padding-top: 5px;
   }
@@ -224,7 +246,12 @@ body {
   .hero_btn {
     margin-top: 20px;
   }
-
+.hero_content p{
+  font-size: 11px;
+}
+#hide_hero{
+  display: none;
+}
   .hero_btn a {
     display: block;
     padding: 12px;
@@ -840,6 +867,10 @@ footer {
   .section-9 .why_us .why_card{
     width: 399px;
   }
+  .why_card{
+    width: 357px;
+
+  }
 }
 
 /* ======================================================.section_10 */
@@ -953,7 +984,7 @@ button:hover {
   }
 
   .section_11 p {
-    font-size: 14px;
+    font-size: 11px;
     padding: 0 10px;
   }
 

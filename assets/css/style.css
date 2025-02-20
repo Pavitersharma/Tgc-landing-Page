@@ -598,6 +598,49 @@ footer {
   width: 30px;
   height: 30px;
 }
+@media screen and (max-width: 768px) {
+  footer {
+    padding: 20px;
+    text-align: center;
+  }
+
+  .footer-container {
+    width: 100%;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .footer-left, .footer-right {
+    width: 100%;
+  }
+
+  .footer-logo {
+    width: 250px;
+  }
+
+  .footer-right h3 {
+    font-size: 16px;
+  }
+
+  .footer-right p {
+    font-size: 14px;
+  }
+
+  .social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .social-icons a {
+    padding: 5px;
+  }
+
+  .social-icons img {
+    width: 25px;
+    height: 25px;
+  }
+}
 
 /* =================================================section_7 */
 .section_7 {

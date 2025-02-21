@@ -4,3 +4,6 @@ $(document).ready(function() {
       $(this).find(".toggle").text($(this).find(".toggle").text() == "+" ? "-" : "+");
     });
   });
+
+
+  

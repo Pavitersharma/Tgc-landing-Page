@@ -5,6 +5,8 @@ $(document).ready(function() {
     });
   });
 
+
+  
   function toggleReadMore(btn) {
     let moreContent = btn.parentElement.nextElementSibling;
     

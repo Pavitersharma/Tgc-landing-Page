@@ -5,5 +5,14 @@ $(document).ready(function() {
     });
   });
 
-
-  
+  function toggleReadMore(btn) {
+    let moreContent = btn.parentElement.nextElementSibling;
+    
+    if (moreContent.style.display === "none" || moreContent.style.display === "") {
+        moreContent.style.display = "block";
+        btn.textContent = "Read Less";
+    } else {
+        moreContent.style.display = "none";
+        btn.textContent = "Read More";
+    }
+}

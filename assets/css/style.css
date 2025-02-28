@@ -199,6 +199,10 @@ body {
 .hero_content h1 {
   font-weight: 600;
 }
+.hero_para{
+  width:  700px;
+
+}
 .hero_btn {
   margin-top: 30px;
 }
@@ -238,7 +242,11 @@ body {
     width: 100%;
     text-align: center;
   }
-
+  .hero_para{
+  width: 350px;
+  margin: auto;
+  
+  }
   .hero_content h1 {
     font-size: 24px;
   }
@@ -247,7 +255,7 @@ body {
     margin-top: 20px;
   }
 .hero_content p{
-  font-size: 11px;
+  font-size: 16 px;
 }
 #hide_hero{
   display: none;
